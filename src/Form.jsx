@@ -29,6 +29,9 @@ class Form extends React.Component {
         this.setState({[event.target.name]: event.target.checked})
     }
 
+    //this form doesn't require parental consent to be checked 'true' in order to submit. 
+    //I thought about it but the point of the app is to create a generic form generator and it may not always be necessary for the checkbox to be checked in order to submit.
+    //For more use cases it would be good to create an option or a prop to specify whether the checkbox is required to be checked. 
     handleSubmit(event) {
         event.preventDefault();
         this.setState({submitted: true}, ()=> {
