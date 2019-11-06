@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-//This functional component looks a lot more complicated because it uses imported Material UI components for UI purposes!
+//This functional component looks a lot more complicated than its essentials because it uses imported Material UI components for UI purposes!
 //before I refactored this code and imported the Material UI, the function was four lines long, and simply returned the following:
 /*
 <div>

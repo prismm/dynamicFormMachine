@@ -1,12 +1,12 @@
 import React from 'react';
-import FormField from './FormField.jsx'; //
+import FormField from './FormField.jsx'; //functional component for each form field
 import Button from '@material-ui/core/Button';
 
 class Form extends React.Component {
     constructor(props) {
-        super(props);
+        super(props); //the form field data should be handed down as props from App.jsx
         
-        //creates an object 'formFieldObj' with all form field names as keys and values undefined
+        //creates an object 'formFieldObj' with all form field names as keys, and corresponding values undefined
         const formFieldObj = this.props.data.reduce((obj, element) => ({...obj,[element.name]: undefined}),{});
 
         //copy formFieldObj onto state, so that the component's state has a key for every field in the form
